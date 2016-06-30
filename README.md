@@ -1,1 +1,1 @@
-It's a programm for learning words and grammar of foreign languages.
+It's a programm for learning words of foreign languages.
