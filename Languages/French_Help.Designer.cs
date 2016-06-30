@@ -56,7 +56,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.button1.BackgroundImage = global::Languages.Properties.Resources.Back;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(29, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 58);

@@ -56,6 +56,12 @@
     <Compile Include="English_Exercises.Designer.cs">
       <DependentUpon>English_Exercises.cs</DependentUpon>
     </Compile>
+    <Compile Include="English_EX_RusEn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="English_EX_RusEn.Designer.cs">
+      <DependentUpon>English_EX_RusEn.cs</DependentUpon>
+    </Compile>
     <Compile Include="English_Help.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="English_Exercises.resx">
       <DependentUpon>English_Exercises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="English_EX_RusEn.resx">
+      <DependentUpon>English_EX_RusEn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="English_Help.resx">
       <DependentUpon>English_Help.cs</DependentUpon>

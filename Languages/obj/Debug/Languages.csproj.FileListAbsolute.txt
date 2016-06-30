@@ -27,3 +27,4 @@ C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Ita
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_About.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_Exercises.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_Help.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.English_EX_RusEn.resources

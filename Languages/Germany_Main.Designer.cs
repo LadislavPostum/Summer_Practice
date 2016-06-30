@@ -51,6 +51,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.button1.BackgroundImage = global::Languages.Properties.Resources.Back;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(29, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 58);
@@ -63,6 +64,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.button2.BackgroundImage = global::Languages.Properties.Resources.Database;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(29, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 58);
@@ -74,6 +76,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.button3.BackgroundImage = global::Languages.Properties.Resources.Exercises;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(29, 157);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(58, 58);
@@ -86,6 +89,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.button4.BackgroundImage = global::Languages.Properties.Resources.Help;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(29, 222);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(58, 58);
@@ -98,6 +102,7 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.button5.BackgroundImage = global::Languages.Properties.Resources.About;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(29, 287);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(58, 58);
