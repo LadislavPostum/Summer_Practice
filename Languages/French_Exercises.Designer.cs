@@ -117,7 +117,7 @@
             this.Margin = new System.Windows.Forms.Padding(9);
             this.MaximizeBox = false;
             this.Name = "French_Exercises";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Exercices";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.French_Exercises_FormClosing);
             this.ResumeLayout(false);

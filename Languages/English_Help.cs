@@ -21,7 +21,7 @@ namespace Languages
 
         int CloseFlag;
         private English_Main _EM;
-        public English_Help(English_Main EM)
+        public English_Help(English_Main EM, int a, int b)
         {
             InitializeComponent();
 
@@ -31,12 +31,16 @@ namespace Languages
 
             CloseFlag = 1;
 
+            this.Top = a;
+            this.Left = b;
+
             toolTip1.SetToolTip(button1, "Назад");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            CallBackMyDaughter.callbackEventHandler(this.Top, this.Left);
             _EM.Show();
             this.Close();
         }

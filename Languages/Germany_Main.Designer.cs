@@ -176,7 +176,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Germany_Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Deutsch";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Germany_Main_FormClosing);
             this.ResumeLayout(false);

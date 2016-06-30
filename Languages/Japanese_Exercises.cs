@@ -21,7 +21,7 @@ namespace Languages
 
         int CloseFlag;
         private Japanese_Main _JM;
-        public Japanese_Exercises(Japanese_Main JM)
+        public Japanese_Exercises(Japanese_Main JM, int a, int b)
         {
             InitializeComponent();
 
@@ -30,6 +30,9 @@ namespace Languages
             _JM = JM;
 
             CloseFlag = 1;
+
+            this.Top = a;
+            this.Left = b;
 
             toolTip1.SetToolTip(button1, "Назад");
             toolTip2.SetToolTip(button2, "Начать упражнение");
@@ -40,6 +43,7 @@ namespace Languages
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            CallBackMyDaughter.callbackEventHandler(this.Top, this.Left);
             _JM.Show();
             this.Close();
         }

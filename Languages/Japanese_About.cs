@@ -21,7 +21,7 @@ namespace Languages
 
         int CloseFlag;
         private Japanese_Main _JM;
-        public Japanese_About(Japanese_Main JM)
+        public Japanese_About(Japanese_Main JM, int a, int b)
         {
             InitializeComponent();
 
@@ -31,12 +31,16 @@ namespace Languages
 
             CloseFlag = 1;
 
+            this.Top = a;
+            this.Left = b;
+
             toolTip1.SetToolTip(button1, "Назад");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            CallBackMyDaughter.callbackEventHandler(this.Top, this.Left);
             _JM.Show();
             this.Close();
         }

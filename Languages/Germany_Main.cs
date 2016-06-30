@@ -19,10 +19,14 @@ namespace Languages
             this.MaximizeBox = false;
         }
 
+        int a, b;
         int CloseFlag;
         private Form1 _f1;
-        public Germany_Main(Form1 F1)
+        public Germany_Main(Form1 F1, int a, int b)
         {
+            //Обработка события
+            CallBackMyDaughter.callbackEventHandler = new CallBackMyDaughter.callbackEvent(this.Coord);
+
             InitializeComponent();
 
             this.MaximizeBox = false;
@@ -31,6 +35,9 @@ namespace Languages
 
             CloseFlag = 1;
 
+            this.Top = a;
+            this.Left = b;
+
             toolTip1.SetToolTip(button1, "Назад");
             toolTip2.SetToolTip(button2, "Добавить новые слова в базу данных");
             toolTip3.SetToolTip(button3, "Упражнения");
@@ -38,30 +45,38 @@ namespace Languages
             toolTip5.SetToolTip(button5, "О программе");
         }
 
+        //Задание новых координат формы
+        private void Coord(int a, int b)
+        {
+            this.Top = a;
+            this.Left = b;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            CallBackMy.callbackEventHandler(this.Top, this.Left);
             _f1.Show();
             this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Germany_Exercises GE = new Germany_Exercises(this);
+            Germany_Exercises GE = new Germany_Exercises(this, this.Top, this.Left);
             this.Hide();
             GE.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Germany_Help GH = new Germany_Help(this);
+            Germany_Help GH = new Germany_Help(this, this.Top, this.Left);
             this.Hide();
             GH.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Germany_About GA = new Germany_About(this);
+            Germany_About GA = new Germany_About(this, this.Top, this.Left);
             this.Hide();
             GA.Show();
         }

@@ -189,7 +189,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Italian_About";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Su";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Italian_About_FormClosing);
             this.ResumeLayout(false);

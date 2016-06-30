@@ -19,4 +19,18 @@ namespace Languages
             Application.Run(new Form1());
         }
     }
+
+    //Возврат в вызывающую главную форму координат вызываемой
+    public static class CallBackMy
+    {
+        public delegate void callbackEvent(int a, int b);
+        public static callbackEvent callbackEventHandler;
+    }
+
+    //Возврат в вызывающую форму координат вызываемой
+    public static class CallBackMyDaughter
+    {
+        public delegate void callbackEvent(int a, int b);
+        public static callbackEvent callbackEventHandler;
+    }
 }

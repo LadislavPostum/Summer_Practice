@@ -21,7 +21,7 @@ namespace Languages
 
         int CloseFlag;
         private Italian_Main _IM;
-        public Italian_Exercises(Italian_Main IM)
+        public Italian_Exercises(Italian_Main IM, int a, int b)
         {
             InitializeComponent();
 
@@ -31,6 +31,9 @@ namespace Languages
 
             CloseFlag = 1;
 
+            this.Top = a;
+            this.Left = b;
+
             toolTip1.SetToolTip(button1, "Назад");
             toolTip2.SetToolTip(button2, "Начать упражнение");
             toolTip3.SetToolTip(button3, "Начать упражнение");
@@ -39,6 +42,7 @@ namespace Languages
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            CallBackMyDaughter.callbackEventHandler(this.Top, this.Left);
             _IM.Show();
             this.Close();
         }

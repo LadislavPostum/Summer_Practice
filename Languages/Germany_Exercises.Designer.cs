@@ -116,7 +116,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Germany_Exercises";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Übungen";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Germany_Exercises_FormClosing);
             this.ResumeLayout(false);

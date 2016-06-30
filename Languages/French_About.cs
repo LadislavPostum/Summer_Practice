@@ -19,7 +19,7 @@ namespace Languages
 
         int CloseFlag;
         private French_Main _FM;
-        public French_About(French_Main FM)
+        public French_About(French_Main FM, int a, int b)
         {
             InitializeComponent();
 
@@ -29,12 +29,16 @@ namespace Languages
 
             CloseFlag = 1;
 
+            this.Top = a;
+            this.Left = b;
+
             toolTip1.SetToolTip(button1, "Назад");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            CallBackMyDaughter.callbackEventHandler(this.Top, this.Left);
             _FM.Show();
             this.Close();
         }

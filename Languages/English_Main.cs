@@ -21,8 +21,11 @@ namespace Languages
 
         int CloseFlag;
         private Form1 _f1;
-        public English_Main(Form1 F1)
+        public English_Main(Form1 F1, int a, int b)
         {
+            //Обработка события
+            CallBackMyDaughter.callbackEventHandler = new CallBackMyDaughter.callbackEvent(this.Coord);
+
             InitializeComponent();
 
             this.MaximizeBox = false;
@@ -31,6 +34,9 @@ namespace Languages
 
             CloseFlag = 1;
 
+            this.Top = a;
+            this.Left = b;
+
             toolTip1.SetToolTip(button5, "Назад");
             toolTip2.SetToolTip(button1, "Добавить новые слова в базу данных");
             toolTip3.SetToolTip(button2, "Упражнения");
@@ -38,30 +44,38 @@ namespace Languages
             toolTip5.SetToolTip(button4, "О программе");
         }
 
+        //Задание новых координат формы
+        private void Coord(int a, int b)
+        {
+            this.Top = a;
+            this.Left = b;
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            CallBackMy.callbackEventHandler(this.Top, this.Left);
             _f1.Show();
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            English_Exercises EE = new English_Exercises(this);
+            English_Exercises EE = new English_Exercises(this, this.Top, this.Left);
             this.Hide();
             EE.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            English_Help EH = new English_Help(this);
+            English_Help EH = new English_Help(this, this.Top, this.Left);
             this.Hide();
             EH.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            English_About EA = new English_About(this);
+            English_About EA = new English_About(this, this.Top, this.Left);
             this.Hide();
             EA.Show();
         }
