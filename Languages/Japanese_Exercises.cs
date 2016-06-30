@@ -23,6 +23,9 @@ namespace Languages
         private Japanese_Main _JM;
         public Japanese_Exercises(Japanese_Main JM, int a, int b)
         {
+            //Обработка события
+            CallBackMyDDaughter.callbackEventHandler = new CallBackMyDDaughter.callbackEvent(this.Coord);
+
             InitializeComponent();
 
             this.MaximizeBox = false;
@@ -40,6 +43,13 @@ namespace Languages
             toolTip4.SetToolTip(button4, "Начать упражнение");
         }
 
+        //Задание новых координат формы
+        public void Coord(int a, int b)
+        {
+            this.Top = a;
+            this.Left = b;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
@@ -54,6 +64,27 @@ namespace Languages
             {
                 Application.Exit();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Japanese_EX_RusJap EXRJ = new Japanese_EX_RusJap(this, this.Top, this.Left);
+            this.Hide();
+            EXRJ.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Japanese_EX_JapJRus EXJR = new Japanese_EX_JapJRus(this, this.Top, this.Left);
+            this.Hide();
+            EXJR.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Japanese_EX_JapKRus EXKR = new Japanese_EX_JapKRus(this, this.Top, this.Left);
+            this.Hide();
+            EXKR.Show();
         }
     }
 }

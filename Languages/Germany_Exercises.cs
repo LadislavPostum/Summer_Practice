@@ -23,6 +23,9 @@ namespace Languages
         private Germany_Main _GM;
         public Germany_Exercises(Germany_Main GM, int a, int b)
         {
+            //Обработка события
+            CallBackMyDDaughter.callbackEventHandler = new CallBackMyDDaughter.callbackEvent(this.Coord);
+
             InitializeComponent();
 
             this.MaximizeBox = false;
@@ -39,6 +42,13 @@ namespace Languages
             toolTip3.SetToolTip(button3, "Начать упражнение");
         }
 
+        //Задание новых координат формы
+        public void Coord(int a, int b)
+        {
+            this.Top = a;
+            this.Left = b;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
@@ -53,6 +63,20 @@ namespace Languages
             {
                 Application.Exit();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Germany_EX_RusGe EXRG = new Germany_EX_RusGe(this, this.Top, this.Left);
+            this.Hide();
+            EXRG.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Germany_EX_GeRus EXGR = new Germany_EX_GeRus(this, this.Top, this.Left);
+            this.Hide();
+            EXGR.Show();
         }
     }
 }

@@ -56,6 +56,12 @@
     <Compile Include="English_Exercises.Designer.cs">
       <DependentUpon>English_Exercises.cs</DependentUpon>
     </Compile>
+    <Compile Include="English_EX_EnRus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="English_EX_EnRus.Designer.cs">
+      <DependentUpon>English_EX_EnRus.cs</DependentUpon>
+    </Compile>
     <Compile Include="English_EX_RusEn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,18 @@
     <Compile Include="French_Exercises.Designer.cs">
       <DependentUpon>French_Exercises.cs</DependentUpon>
     </Compile>
+    <Compile Include="French_EX_FrRus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="French_EX_FrRus.Designer.cs">
+      <DependentUpon>French_EX_FrRus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="French_EX_RusFr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="French_EX_RusFr.Designer.cs">
+      <DependentUpon>French_EX_RusFr.cs</DependentUpon>
+    </Compile>
     <Compile Include="French_Help.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +133,18 @@
     </Compile>
     <Compile Include="Germany_Exercises.Designer.cs">
       <DependentUpon>Germany_Exercises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Germany_EX_GeRus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Germany_EX_GeRus.Designer.cs">
+      <DependentUpon>Germany_EX_GeRus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Germany_EX_RusGe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Germany_EX_RusGe.Designer.cs">
+      <DependentUpon>Germany_EX_RusGe.cs</DependentUpon>
     </Compile>
     <Compile Include="Germany_Help.cs">
       <SubType>Form</SubType>
@@ -140,6 +170,18 @@
     <Compile Include="Italian_Exercises.Designer.cs">
       <DependentUpon>Italian_Exercises.cs</DependentUpon>
     </Compile>
+    <Compile Include="Italian_EX_ItRus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Italian_EX_ItRus.Designer.cs">
+      <DependentUpon>Italian_EX_ItRus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Italian_EX_RusIt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Italian_EX_RusIt.Designer.cs">
+      <DependentUpon>Italian_EX_RusIt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Italian_Help.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +206,24 @@
     <Compile Include="Japanese_Exercises.Designer.cs">
       <DependentUpon>Japanese_Exercises.cs</DependentUpon>
     </Compile>
+    <Compile Include="Japanese_EX_JapJRus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Japanese_EX_JapJRus.Designer.cs">
+      <DependentUpon>Japanese_EX_JapJRus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Japanese_EX_JapKRus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Japanese_EX_JapKRus.Designer.cs">
+      <DependentUpon>Japanese_EX_JapKRus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Japanese_EX_RusJap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Japanese_EX_RusJap.Designer.cs">
+      <DependentUpon>Japanese_EX_RusJap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Japanese_Help.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +244,9 @@
     <EmbeddedResource Include="English_Exercises.resx">
       <DependentUpon>English_Exercises.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="English_EX_EnRus.resx">
+      <DependentUpon>English_EX_EnRus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="English_EX_RusEn.resx">
       <DependentUpon>English_EX_RusEn.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +265,12 @@
     <EmbeddedResource Include="French_Exercises.resx">
       <DependentUpon>French_Exercises.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="French_EX_FrRus.resx">
+      <DependentUpon>French_EX_FrRus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="French_EX_RusFr.resx">
+      <DependentUpon>French_EX_RusFr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="French_Help.resx">
       <DependentUpon>French_Help.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +282,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Germany_Exercises.resx">
       <DependentUpon>Germany_Exercises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Germany_EX_GeRus.resx">
+      <DependentUpon>Germany_EX_GeRus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Germany_EX_RusGe.resx">
+      <DependentUpon>Germany_EX_RusGe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Germany_Help.resx">
       <DependentUpon>Germany_Help.cs</DependentUpon>
@@ -226,6 +301,12 @@
     <EmbeddedResource Include="Italian_Exercises.resx">
       <DependentUpon>Italian_Exercises.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Italian_EX_ItRus.resx">
+      <DependentUpon>Italian_EX_ItRus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Italian_EX_RusIt.resx">
+      <DependentUpon>Italian_EX_RusIt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Italian_Help.resx">
       <DependentUpon>Italian_Help.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +318,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Japanese_Exercises.resx">
       <DependentUpon>Japanese_Exercises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Japanese_EX_JapJRus.resx">
+      <DependentUpon>Japanese_EX_JapJRus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Japanese_EX_JapKRus.resx">
+      <DependentUpon>Japanese_EX_JapKRus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Japanese_EX_RusJap.resx">
+      <DependentUpon>Japanese_EX_RusJap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Japanese_Help.resx">
       <DependentUpon>Japanese_Help.cs</DependentUpon>

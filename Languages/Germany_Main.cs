@@ -19,7 +19,6 @@ namespace Languages
             this.MaximizeBox = false;
         }
 
-        int a, b;
         int CloseFlag;
         private Form1 _f1;
         public Germany_Main(Form1 F1, int a, int b)

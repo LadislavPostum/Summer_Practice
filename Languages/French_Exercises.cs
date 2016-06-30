@@ -23,6 +23,9 @@ namespace Languages
         private French_Main _FM;
         public French_Exercises(French_Main FM, int a, int b)
         {
+            //Обработка события
+            CallBackMyDDaughter.callbackEventHandler = new CallBackMyDDaughter.callbackEvent(this.Coord);
+
             InitializeComponent();
 
             this.MaximizeBox = false;
@@ -39,6 +42,13 @@ namespace Languages
             toolTip3.SetToolTip(button3, "Начать упражнение");
         }
 
+        //Задание новых координат формы
+        public void Coord(int a, int b)
+        {
+            this.Top = a;
+            this.Left = b;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
@@ -53,6 +63,20 @@ namespace Languages
             {
                 Application.Exit();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            French_EX_RusFr EXRF = new French_EX_RusFr(this, this.Top, this.Left);
+            this.Hide();
+            EXRF.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            French_EX_FrRus EXFR = new French_EX_FrRus(this, this.Top, this.Left);
+            this.Hide();
+            EXFR.Show();
         }
     }
 }

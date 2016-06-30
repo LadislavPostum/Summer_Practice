@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace Languages
 {
-    public partial class English_EX_RusEn : Form
+    public partial class English_EX_EnRus : Form
     {
-        public English_EX_RusEn()
+        public English_EX_EnRus()
         {
             InitializeComponent();
-
-            this.MaximizeBox = false;
         }
 
         int CloseFlag;
         private English_Exercises _EE;
-        public English_EX_RusEn(English_Exercises EE, int a, int b)
+        public English_EX_EnRus(English_Exercises EE, int a, int b)
         {
             InitializeComponent();
 
@@ -40,16 +38,8 @@ namespace Languages
             toolTip2.SetToolTip(button2, "Показать перевод");
             toolTip3.SetToolTip(button3, "Следующее слово");
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CloseFlag = 0;
-            CallBackMyDDaughter.callbackEventHandler(this.Top, this.Left);
-            _EE.Show();
-            this.Close();
-        }
-
-        private void English_EX_RusEn_FormClosing(object sender, FormClosingEventArgs e)
+        
+        private void English_EX_EnRus_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (CloseFlag != 0)
             {
@@ -61,5 +51,14 @@ namespace Languages
         {
             this.label5.Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CloseFlag = 0;
+            CallBackMyDDaughter.callbackEventHandler(this.Top, this.Left);
+            _EE.Show();
+            this.Close();
+        }
+
     }
 }

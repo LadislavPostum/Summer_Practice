@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Languages
 {
-    public partial class English_EX_RusEn : Form
+    public partial class Japanese_EX_JapJRus : Form
     {
-        public English_EX_RusEn()
+        public Japanese_EX_JapJRus()
         {
             InitializeComponent();
 
@@ -20,46 +20,53 @@ namespace Languages
         }
 
         int CloseFlag;
-        private English_Exercises _EE;
-        public English_EX_RusEn(English_Exercises EE, int a, int b)
+        private Japanese_Exercises _JE;
+        public Japanese_EX_JapJRus(Japanese_Exercises JE, int a, int b)
         {
             InitializeComponent();
 
             this.MaximizeBox = false;
 
-            this.label5.Visible = false;
-
-            _EE = EE;
+            _JE = JE;
 
             CloseFlag = 1;
+
+            this.label5.Visible = false;
+            this.label6.Visible = false;
 
             this.Top = a;
             this.Left = b;
 
             toolTip1.SetToolTip(button1, "Назад");
-            toolTip2.SetToolTip(button2, "Показать перевод");
-            toolTip3.SetToolTip(button3, "Следующее слово");
+            toolTip2.SetToolTip(button2, "Показать кану");
+            toolTip3.SetToolTip(button3, "Показать перевод");
+            toolTip4.SetToolTip(button4, "Следующее слово");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
             CallBackMyDDaughter.callbackEventHandler(this.Top, this.Left);
-            _EE.Show();
+            _JE.Show();
             this.Close();
-        }
-
-        private void English_EX_RusEn_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (CloseFlag != 0)
-            {
-                Application.Exit();
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.label5.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.label6.Visible = true;
+        }
+
+        private void Japanese_EX_JapJRus_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (CloseFlag != 0)
+            {
+                Application.Exit();
+            }
         }
     }
 }

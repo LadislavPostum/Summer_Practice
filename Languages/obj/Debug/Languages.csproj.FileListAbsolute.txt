@@ -28,3 +28,13 @@ C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Jap
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_Exercises.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_Help.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.English_EX_RusEn.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.English_EX_EnRus.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.French_EX_FrRus.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.French_EX_RusFr.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Germany_EX_GeRus.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Germany_EX_RusGe.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Italian_EX_ItRus.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Italian_EX_RusIt.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_EX_JapJRus.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_EX_JapKRus.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_EX_RusJap.resources

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Languages
 {
-    public partial class English_EX_RusEn : Form
+    public partial class French_EX_RusFr : Form
     {
-        public English_EX_RusEn()
+        public French_EX_RusFr()
         {
             InitializeComponent();
 
@@ -20,18 +20,18 @@ namespace Languages
         }
 
         int CloseFlag;
-        private English_Exercises _EE;
-        public English_EX_RusEn(English_Exercises EE, int a, int b)
+        private French_Exercises _FE;
+        public French_EX_RusFr(French_Exercises FE, int a, int b)
         {
             InitializeComponent();
 
             this.MaximizeBox = false;
 
-            this.label5.Visible = false;
-
-            _EE = EE;
-
             CloseFlag = 1;
+
+            _FE = FE;
+
+            this.label5.Visible = false;
 
             this.Top = a;
             this.Left = b;
@@ -45,21 +45,21 @@ namespace Languages
         {
             CloseFlag = 0;
             CallBackMyDDaughter.callbackEventHandler(this.Top, this.Left);
-            _EE.Show();
+            _FE.Show();
             this.Close();
-        }
-
-        private void English_EX_RusEn_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (CloseFlag != 0)
-            {
-                Application.Exit();
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.label5.Visible = true;
+        }
+
+        private void French_EX_RusFr_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (CloseFlag != 0)
+            {
+                Application.Exit();
+            }
         }
     }
 }
