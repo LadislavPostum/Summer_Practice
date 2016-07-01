@@ -38,3 +38,6 @@ C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Ita
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_EX_JapJRus.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_EX_JapKRus.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_EX_RusJap.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\English_DataBase.mdf
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\English_DataBase_log.ldf
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.English_DataBase.resources

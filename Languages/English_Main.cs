@@ -86,6 +86,13 @@ namespace Languages
             {
                 Application.Exit();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            English_DataBase EDTB = new English_DataBase(this, this.Top, this.Left);
+            this.Hide();
+            EDTB.Show();
         }        
     }
 }
