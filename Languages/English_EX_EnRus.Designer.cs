@@ -41,6 +41,10 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.english_DataBaseDataSet = new Languages.English_DataBaseDataSet();
+            this.tableTableAdapter = new Languages.English_DataBaseDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new Languages.English_DataBaseDataSetTableAdapters.TableAdapterManager();
+            ((System.ComponentModel.ISupportInitialize)(this.english_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -150,6 +154,22 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "Далее";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // english_DataBaseDataSet
+            // 
+            this.english_DataBaseDataSet.DataSetName = "English_DataBaseDataSet";
+            this.english_DataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Languages.English_DataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // English_EX_EnRus
             // 
@@ -170,6 +190,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "English - Русский";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.English_EX_EnRus_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.english_DataBaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +209,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.ToolTip toolTip3;
+        private English_DataBaseDataSet english_DataBaseDataSet;
+        private English_DataBaseDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private English_DataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
