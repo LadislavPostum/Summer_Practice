@@ -88,6 +88,13 @@ namespace Languages
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Germany_DataBase GDTB = new Germany_DataBase(this, this.Top, this.Left);
+            this.Hide();
+            GDTB.Show();
+        }
+
 
     }
 }

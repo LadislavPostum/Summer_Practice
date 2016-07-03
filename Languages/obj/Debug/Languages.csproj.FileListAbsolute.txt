@@ -41,3 +41,6 @@ C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Jap
 C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\English_DataBase.mdf
 C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\English_DataBase_log.ldf
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.English_DataBase.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Germany_DataBase.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Germany_DataBase.mdf
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Germany_DataBase_log.ldf

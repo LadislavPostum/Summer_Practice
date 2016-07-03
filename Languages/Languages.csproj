@@ -11,6 +11,7 @@
     <AssemblyName>Languages</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -156,6 +156,17 @@
     </Compile>
     <Compile Include="Germany_About.Designer.cs">
       <DependentUpon>Germany_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Germany_DataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Germany_DataBase.Designer.cs">
+      <DependentUpon>Germany_DataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Germany_DataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Germany_DataBaseDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Germany_Exercises.cs">
       <SubType>Form</SubType>
@@ -312,6 +323,9 @@
     <EmbeddedResource Include="Germany_About.resx">
       <DependentUpon>Germany_About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Germany_DataBase.resx">
+      <DependentUpon>Germany_DataBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Germany_Exercises.resx">
       <DependentUpon>Germany_Exercises.cs</DependentUpon>
     </EmbeddedResource>
@@ -381,6 +395,17 @@
     </None>
     <None Include="English_DataBaseDataSet.xss">
       <DependentUpon>English_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Germany_DataBaseDataSet.xsc">
+      <DependentUpon>Germany_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Germany_DataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Germany_DataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Germany_DataBaseDataSet.xss">
+      <DependentUpon>Germany_DataBaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -458,6 +483,13 @@
     <Content Include="English_DataBase_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>English_DataBase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Germany_DataBase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Germany_DataBase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Germany_DataBase.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

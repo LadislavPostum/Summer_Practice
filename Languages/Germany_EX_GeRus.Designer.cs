@@ -41,6 +41,10 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.tableAdapterManager = new Languages.Germany_DataBaseDataSetTableAdapters.TableAdapterManager();
+            this.tableTableAdapter = new Languages.Germany_DataBaseDataSetTableAdapters.TableTableAdapter();
+            this.germany_DataBaseDataSet = new Languages.Germany_DataBaseDataSet();
+            ((System.ComponentModel.ISupportInitialize)(this.germany_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -150,6 +154,23 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "Далее";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.TableTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Languages.Germany_DataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // germany_DataBaseDataSet
+            // 
+            this.germany_DataBaseDataSet.DataSetName = "Germany_DataBaseDataSet";
+            this.germany_DataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Germany_EX_GeRus
             // 
@@ -170,6 +191,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Deutsch - Русский";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Germany_EX_GeRus_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.germany_DataBaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +210,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.ToolTip toolTip3;
+        private Germany_DataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Germany_DataBaseDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Germany_DataBaseDataSet germany_DataBaseDataSet;
     }
 }
