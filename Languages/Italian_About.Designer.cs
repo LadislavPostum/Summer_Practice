@@ -167,10 +167,11 @@
             this.linkLabel1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkLabel1.Location = new System.Drawing.Point(206, 300);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(227, 19);
+            this.linkLabel1.Size = new System.Drawing.Size(268, 19);
             this.linkLabel1.TabIndex = 28;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "www.vk.com/suiseiseki__desu";
+            this.linkLabel1.Text = "https://github.com/LadislavPostum";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Italian_About
             // 

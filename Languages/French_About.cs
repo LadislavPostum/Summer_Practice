@@ -33,11 +33,14 @@ namespace Languages
             this.Left = b;
 
             toolTip1.SetToolTip(button1, "Назад");
+
+            this.linkLabel1 = new LinkLabel();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CloseFlag = 0;
+            this.linkLabel1.LinkVisited = false;
             CallBackMyDaughter.callbackEventHandler(this.Top, this.Left);
             _FM.Show();
             this.Close();
@@ -49,6 +52,12 @@ namespace Languages
             {
                 Application.Exit();
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/LadislavPostum");
+            this.linkLabel1.LinkVisited = true;
         }
     }
 }
