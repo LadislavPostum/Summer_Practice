@@ -34,7 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -44,6 +43,7 @@
             this.english_DataBaseDataSet = new Languages.English_DataBaseDataSet();
             this.tableTableAdapter = new Languages.English_DataBaseDataSetTableAdapters.TableTableAdapter();
             this.tableAdapterManager = new Languages.English_DataBaseDataSetTableAdapters.TableAdapterManager();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.english_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,19 +99,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "/";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(22, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(540, 38);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Слово";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -171,6 +158,19 @@
             this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
             this.tableAdapterManager.UpdateOrder = Languages.English_DataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(22, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(540, 38);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Слово";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // English_EX_RusEn
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -203,7 +203,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolTip toolTip1;
@@ -213,5 +212,6 @@
         private English_DataBaseDataSet english_DataBaseDataSet;
         private English_DataBaseDataSetTableAdapters.TableTableAdapter tableTableAdapter;
         private English_DataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Label label4;
     }
 }

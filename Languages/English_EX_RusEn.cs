@@ -69,7 +69,8 @@ namespace Languages
             {
                 label4.Text = this.english_DataBaseDataSet.Table.Rows[j][2].ToString();
                 label5.Text = this.english_DataBaseDataSet.Table.Rows[j][1].ToString();
-            }            
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,11 +103,15 @@ namespace Languages
             int k = 0;
             if (i != 0)
             {
-                while (l == j)
+                if (i != 1)
                 {
-                    j = rand.Next(i);
-                    k = j + 1;
-                }                
+                    while (l == j)
+                    {
+                        j = rand.Next(i);
+                        k = j + 1;
+                    }
+                }
+                else k = 1;       
             }
 
             String s2 = k.ToString();
