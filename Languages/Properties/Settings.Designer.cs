@@ -66,5 +66,16 @@ namespace Languages.Properties {
                 return ((string)(this["Italian_DataBaseConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Japanese_DataBase.md" +
+            "f;Integrated Security=True")]
+        public string Japanese_DataBaseConnectionString {
+            get {
+                return ((string)(this["Japanese_DataBaseConnectionString"]));
+            }
+        }
     }
 }

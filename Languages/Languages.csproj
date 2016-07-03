@@ -262,6 +262,17 @@
     <Compile Include="Japanese_About.Designer.cs">
       <DependentUpon>Japanese_About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Japanese_DataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Japanese_DataBase.Designer.cs">
+      <DependentUpon>Japanese_DataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Japanese_DataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Japanese_DataBaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Japanese_Exercises.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -390,6 +401,9 @@
     <EmbeddedResource Include="Japanese_About.resx">
       <DependentUpon>Japanese_About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Japanese_DataBase.resx">
+      <DependentUpon>Japanese_DataBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Japanese_Exercises.resx">
       <DependentUpon>Japanese_Exercises.cs</DependentUpon>
     </EmbeddedResource>
@@ -456,6 +470,17 @@
     </None>
     <None Include="Italian_DataBaseDataSet.xss">
       <DependentUpon>Italian_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Japanese_DataBaseDataSet.xsc">
+      <DependentUpon>Japanese_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Japanese_DataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Japanese_DataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Japanese_DataBaseDataSet.xss">
+      <DependentUpon>Japanese_DataBaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -554,6 +579,13 @@
     <Content Include="Italian_DataBase_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Italian_DataBase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Japanese_DataBase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Japanese_DataBase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Japanese_DataBase.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

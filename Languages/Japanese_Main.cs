@@ -87,5 +87,12 @@ namespace Languages
                 Application.Exit();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Japanese_DataBase JDTB = new Japanese_DataBase(this, this.Top, this.Left);
+            this.Hide();
+            JDTB.Show();
+        }
     }
 }

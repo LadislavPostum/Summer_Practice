@@ -44,6 +44,10 @@
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
+            this.japanese_DataBaseDataSet = new Languages.Japanese_DataBaseDataSet();
+            this.tableTableAdapter = new Languages.Japanese_DataBaseDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new Languages.Japanese_DataBaseDataSetTableAdapters.TableAdapterManager();
+            ((System.ComponentModel.ISupportInitialize)(this.japanese_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -181,6 +185,22 @@
             this.button4.TabIndex = 13;
             this.button4.Text = "Далее";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // japanese_DataBaseDataSet
+            // 
+            this.japanese_DataBaseDataSet.DataSetName = "Japanese_DataBaseDataSet";
+            this.japanese_DataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Languages.Japanese_DataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Japanese_EX_RusJap
             // 
@@ -203,6 +223,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Русский - 漢字、仮名";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Japanese_EX_RusJap_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.japanese_DataBaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,5 +245,8 @@
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.ToolTip toolTip3;
         private System.Windows.Forms.ToolTip toolTip4;
+        private Japanese_DataBaseDataSet japanese_DataBaseDataSet;
+        private Japanese_DataBaseDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Japanese_DataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

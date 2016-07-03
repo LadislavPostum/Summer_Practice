@@ -50,3 +50,6 @@ C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Italian_DataB
 C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Italian_DataBase_log.ldf
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.French_DataBase.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Italian_DataBase.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Japanese_DataBase.mdf
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Japanese_DataBase_log.ldf
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Japanese_DataBase.resources
