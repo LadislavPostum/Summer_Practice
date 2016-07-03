@@ -87,5 +87,12 @@ namespace Languages
                 Application.Exit();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            French_DataBase FDTB = new French_DataBase(this, this.Top, this.Left);
+            this.Hide();
+            FDTB.Show();
+        }
     }
 }

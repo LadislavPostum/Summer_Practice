@@ -67,8 +67,8 @@ namespace Languages
 
             if (i != 0)
             {
-                label4.Text = this.germany_DataBaseDataSet.Table.Rows[j][2].ToString();
-                label5.Text = this.germany_DataBaseDataSet.Table.Rows[j][1].ToString();
+                label4.Text = this.germany_DataBaseDataSet.Table.Rows[j][1].ToString();
+                label5.Text = this.germany_DataBaseDataSet.Table.Rows[j][2].ToString();
             }
         }
 
@@ -124,8 +124,8 @@ namespace Languages
 
             if (i != 0)
             {
-                label4.Text = this.germany_DataBaseDataSet.Table.Rows[j][2].ToString();
-                label5.Text = this.germany_DataBaseDataSet.Table.Rows[j][1].ToString();
+                label4.Text = this.germany_DataBaseDataSet.Table.Rows[j][1].ToString();
+                label5.Text = this.germany_DataBaseDataSet.Table.Rows[j][2].ToString();
             }            
         }
     }

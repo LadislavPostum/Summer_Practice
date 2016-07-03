@@ -121,6 +121,17 @@
     <Compile Include="French_About.Designer.cs">
       <DependentUpon>French_About.cs</DependentUpon>
     </Compile>
+    <Compile Include="French_DataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="French_DataBase.Designer.cs">
+      <DependentUpon>French_DataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="French_DataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>French_DataBaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="French_Exercises.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +316,9 @@
     <EmbeddedResource Include="French_About.resx">
       <DependentUpon>French_About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="French_DataBase.resx">
+      <DependentUpon>French_DataBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="French_Exercises.resx">
       <DependentUpon>French_Exercises.cs</DependentUpon>
     </EmbeddedResource>
@@ -396,6 +410,17 @@
     <None Include="English_DataBaseDataSet.xss">
       <DependentUpon>English_DataBaseDataSet.xsd</DependentUpon>
     </None>
+    <None Include="French_DataBaseDataSet.xsc">
+      <DependentUpon>French_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="French_DataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>French_DataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="French_DataBaseDataSet.xss">
+      <DependentUpon>French_DataBaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Germany_DataBaseDataSet.xsc">
       <DependentUpon>Germany_DataBaseDataSet.xsd</DependentUpon>
     </None>
@@ -483,6 +508,13 @@
     <Content Include="English_DataBase_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>English_DataBase.mdf</DependentUpon>
+    </Content>
+    <Content Include="French_DataBase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="French_DataBase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>French_DataBase.mdf</DependentUpon>
     </Content>
     <Content Include="Germany_DataBase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
