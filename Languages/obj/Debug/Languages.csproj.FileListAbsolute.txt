@@ -44,3 +44,9 @@ C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Eng
 C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Germany_DataBase.resources
 C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Germany_DataBase.mdf
 C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Germany_DataBase_log.ldf
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\French_DataBase.mdf
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\French_DataBase_log.ldf
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Italian_DataBase.mdf
+C:\Users\PC\Desktop\Практика\Languages\Languages\bin\Debug\Italian_DataBase_log.ldf
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.French_DataBase.resources
+C:\Users\PC\Desktop\Практика\Languages\Languages\obj\Debug\Languages.Italian_DataBase.resources

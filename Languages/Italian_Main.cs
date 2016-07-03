@@ -87,5 +87,12 @@ namespace Languages
                 Application.Exit();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Italian_DataBase IDTB = new Italian_DataBase(this, this.Top, this.Left);
+            this.Hide();
+            IDTB.Show();
+        }
     }
 }

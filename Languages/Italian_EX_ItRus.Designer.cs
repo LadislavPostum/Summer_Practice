@@ -41,6 +41,10 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.italian_DataBaseDataSet = new Languages.Italian_DataBaseDataSet();
+            this.tableTableAdapter = new Languages.Italian_DataBaseDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new Languages.Italian_DataBaseDataSetTableAdapters.TableAdapterManager();
+            ((System.ComponentModel.ISupportInitialize)(this.italian_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -150,6 +154,22 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Далее";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // italian_DataBaseDataSet
+            // 
+            this.italian_DataBaseDataSet.DataSetName = "Italian_DataBaseDataSet";
+            this.italian_DataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Languages.Italian_DataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Italian_EX_ItRus
             // 
@@ -170,6 +190,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Italiano - Русский";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Italian_EX_ItRus_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.italian_DataBaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +209,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.ToolTip toolTip3;
+        private Italian_DataBaseDataSet italian_DataBaseDataSet;
+        private Italian_DataBaseDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Italian_DataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

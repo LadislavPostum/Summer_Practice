@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Languages
 {
-    public partial class French_DataBase : Form
+    public partial class Italian_DataBase : Form
     {
-        public French_DataBase()
+        public Italian_DataBase()
         {
             InitializeComponent();
         }
 
         int CloseFlag;
-        private French_Main _FM;
-        public French_DataBase(French_Main FM, int a, int b)
+        private Italian_Main _IM;
+        public Italian_DataBase(Italian_Main IM, int a, int b)
         {
             InitializeComponent();
 
@@ -27,7 +27,7 @@ namespace Languages
 
             CloseFlag = 1;
 
-            _FM = FM;
+            _IM = IM;
 
             this.Top = a;
             this.Left = b;
@@ -39,14 +39,14 @@ namespace Languages
         {
             this.Validate();
             this.tableBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.french_DataBaseDataSet);
+            this.tableAdapterManager.UpdateAll(this.italian_DataBaseDataSet);
 
         }
 
-        private void French_DataBase_Load(object sender, EventArgs e)
+        private void Italian_DataBase_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "french_DataBaseDataSet.Table". При необходимости она может быть перемещена или удалена.
-            this.tableTableAdapter.Fill(this.french_DataBaseDataSet.Table);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "italian_DataBaseDataSet.Table". При необходимости она может быть перемещена или удалена.
+            this.tableTableAdapter.Fill(this.italian_DataBaseDataSet.Table);
 
         }
 
@@ -54,11 +54,11 @@ namespace Languages
         {
             CloseFlag = 0;
             CallBackMyDaughter.callbackEventHandler(this.Top, this.Left);
-            _FM.Show();
+            _IM.Show();
             this.Close();
         }
 
-        private void French_DataBase_FormClosing(object sender, FormClosingEventArgs e)
+        private void Italian_DataBase_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (CloseFlag != 0)
             {
