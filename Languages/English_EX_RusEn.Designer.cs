@@ -111,7 +111,7 @@
             this.label5.Size = new System.Drawing.Size(540, 38);
             this.label5.TabIndex = 6;
             this.label5.Text = "Word";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
             // 
@@ -120,7 +120,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button2.Location = new System.Drawing.Point(216, 201);
+            this.button2.Location = new System.Drawing.Point(29, 212);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 31);
             this.button2.TabIndex = 7;
@@ -167,19 +167,19 @@
             this.label4.Location = new System.Drawing.Point(22, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(540, 38);
-            this.label4.TabIndex = 5;
+            this.label4.TabIndex = 9;
             this.label4.Text = "Слово";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // English_EX_RusEn
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Languages.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

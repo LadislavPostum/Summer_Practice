@@ -114,7 +114,7 @@
             this.label4.Size = new System.Drawing.Size(540, 38);
             this.label4.TabIndex = 8;
             this.label4.Text = "Слово";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
@@ -127,7 +127,7 @@
             this.label5.Size = new System.Drawing.Size(540, 38);
             this.label5.TabIndex = 9;
             this.label5.Text = "言葉";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
@@ -135,12 +135,12 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(22, 235);
+            this.label6.Location = new System.Drawing.Point(22, 245);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(540, 38);
             this.label6.TabIndex = 10;
             this.label6.Text = "ことば";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
             // 
@@ -149,7 +149,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button2.Location = new System.Drawing.Point(216, 191);
+            this.button2.Location = new System.Drawing.Point(29, 202);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 31);
             this.button2.TabIndex = 11;
@@ -164,7 +164,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button3.Location = new System.Drawing.Point(216, 276);
+            this.button3.Location = new System.Drawing.Point(29, 291);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 31);
             this.button3.TabIndex = 12;

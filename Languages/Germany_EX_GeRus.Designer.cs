@@ -111,7 +111,7 @@
             this.label4.Size = new System.Drawing.Size(540, 38);
             this.label4.TabIndex = 9;
             this.label4.Text = "Word";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
@@ -124,7 +124,7 @@
             this.label5.Size = new System.Drawing.Size(540, 38);
             this.label5.TabIndex = 10;
             this.label5.Text = "Слово";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
             // 
@@ -133,7 +133,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button2.Location = new System.Drawing.Point(216, 201);
+            this.button2.Location = new System.Drawing.Point(29, 212);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 31);
             this.button2.TabIndex = 11;
