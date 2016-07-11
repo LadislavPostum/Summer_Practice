@@ -225,6 +225,7 @@
             this.tableDataGridView.Name = "tableDataGridView";
             this.tableDataGridView.Size = new System.Drawing.Size(364, 321);
             this.tableDataGridView.TabIndex = 1;
+            this.tableDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.tableDataGridView_DataError);
             // 
             // dataGridViewTextBoxColumn1
             // 

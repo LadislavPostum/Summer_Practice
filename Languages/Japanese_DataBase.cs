@@ -71,5 +71,10 @@ namespace Languages
         {
             MessageBox.Show("Для добавления слова в базу данных нужно ввести:\n1) Порядковый номер\n2) Слово, записанное кандзи\n3) Слово, записанное каной\n4) Перевод на русский язык", "Помощь", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
+
+        private void tableDataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            MessageBox.Show("Необходимо ввести ID, слово, записанное кандзи, это же слово, записанное каной, и перевод!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }

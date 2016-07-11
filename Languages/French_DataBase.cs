@@ -65,5 +65,10 @@ namespace Languages
                 Application.Exit();
             }
         }
+
+        private void tableDataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            MessageBox.Show("Необходимо ввести ID, слово на французском и перевод!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }
