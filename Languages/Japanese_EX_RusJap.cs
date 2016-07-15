@@ -39,8 +39,8 @@ namespace Languages
             this.Left = b;
 
             toolTip1.SetToolTip(button1, "Назад");
-            toolTip2.SetToolTip(button2, "Показать кандзи");
-            toolTip3.SetToolTip(button3, "Показать кану");
+            toolTip2.SetToolTip(button2, "Проверить кандзи");
+            toolTip3.SetToolTip(button3, "Проверить кану");
             toolTip4.SetToolTip(button4, "Следующее слово");
 
             this.tableTableAdapter.Fill(japanese_DataBaseDataSet.Table);
@@ -86,12 +86,36 @@ namespace Languages
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.label5.Visible = true;
+            if (textBox1.Text != "")
+            {
+                String s = label5.Text.Replace(" ", "");
+                if (textBox1.Text == s)
+                {
+                    textBox1.BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    textBox1.BackColor = Color.LightCoral;
+                    label5.Visible = true;
+                }
+            }       
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.label6.Visible = true;
+            if (textBox2.Text != "")
+            {
+                String s = label6.Text.Replace(" ", "");
+                if (textBox2.Text == s)
+                {
+                    textBox2.BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    textBox2.BackColor = Color.LightCoral;
+                    label6.Visible = true;
+                }
+            }       
         }
 
         private void Japanese_EX_RusJap_FormClosing(object sender, FormClosingEventArgs e)
@@ -106,6 +130,10 @@ namespace Languages
         {
             this.label5.Visible = false;
             this.label6.Visible = false;
+            this.textBox1.Text = "";
+            this.textBox1.BackColor = Color.White;
+            this.textBox2.Text = "";
+            this.textBox2.BackColor = Color.White;
 
             int l = j;
             Random rand = new Random();

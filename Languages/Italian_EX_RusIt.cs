@@ -38,7 +38,7 @@ namespace Languages
             this.label5.Visible = false;
 
             toolTip1.SetToolTip(button1, "Назад");
-            toolTip2.SetToolTip(button2, "Показать перевод");
+            toolTip2.SetToolTip(button2, "Проверить");
             toolTip3.SetToolTip(button3, "Следующее слово");
 
             this.tableTableAdapter.Fill(italian_DataBaseDataSet.Table);
@@ -82,7 +82,19 @@ namespace Languages
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.label5.Visible = true;
+            if (textBox1.Text != "")
+            {
+                String s = label5.Text.Replace(" ", "");
+                if (textBox1.Text == s)
+                {
+                    textBox1.BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    textBox1.BackColor = Color.LightCoral;
+                    label5.Visible = true;
+                }
+            }       
         }
 
         private void Italian_EX_RusIt_FormClosing(object sender, FormClosingEventArgs e)
@@ -96,6 +108,8 @@ namespace Languages
         private void button3_Click(object sender, EventArgs e)
         {
             this.label5.Visible = false;
+            this.textBox1.Text = "";
+            this.textBox1.BackColor = Color.White;
 
             int l = j;
             Random rand = new Random();

@@ -47,6 +47,8 @@
             this.japanese_DataBaseDataSet = new Languages.Japanese_DataBaseDataSet();
             this.tableTableAdapter = new Languages.Japanese_DataBaseDataSetTableAdapters.TableTableAdapter();
             this.tableAdapterManager = new Languages.Japanese_DataBaseDataSetTableAdapters.TableAdapterManager();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.japanese_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,9 +124,9 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(22, 150);
+            this.label5.Location = new System.Drawing.Point(217, 198);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(540, 38);
+            this.label5.Size = new System.Drawing.Size(355, 38);
             this.label5.TabIndex = 9;
             this.label5.Text = "言葉";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,9 +137,9 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(22, 245);
+            this.label6.Location = new System.Drawing.Point(217, 301);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(540, 38);
+            this.label6.Size = new System.Drawing.Size(268, 38);
             this.label6.TabIndex = 10;
             this.label6.Text = "ことば";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -153,7 +155,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 31);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Показать";
+            this.button2.Text = "Проверить";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -164,7 +166,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button3.Location = new System.Drawing.Point(29, 291);
+            this.button3.Location = new System.Drawing.Point(29, 305);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 31);
             this.button3.TabIndex = 12;
@@ -202,11 +204,33 @@
             this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
             this.tableAdapterManager.UpdateOrder = Languages.Japanese_DataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBox1.Location = new System.Drawing.Point(29, 141);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(341, 46);
+            this.textBox1.TabIndex = 21;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBox2.Location = new System.Drawing.Point(29, 246);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(341, 46);
+            this.textBox2.TabIndex = 22;
+            // 
             // Japanese_EX_RusJap
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Languages.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -248,5 +272,7 @@
         private Japanese_DataBaseDataSet japanese_DataBaseDataSet;
         private Japanese_DataBaseDataSetTableAdapters.TableTableAdapter tableTableAdapter;
         private Japanese_DataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

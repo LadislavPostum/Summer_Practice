@@ -44,6 +44,7 @@
             this.english_DataBaseDataSet = new Languages.English_DataBaseDataSet();
             this.tableTableAdapter = new Languages.English_DataBaseDataSetTableAdapters.TableTableAdapter();
             this.tableAdapterManager = new Languages.English_DataBaseDataSetTableAdapters.TableAdapterManager();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.english_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,9 +120,9 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(22, 160);
+            this.label5.Location = new System.Drawing.Point(217, 205);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(540, 38);
+            this.label5.Size = new System.Drawing.Size(355, 38);
             this.label5.TabIndex = 8;
             this.label5.Text = "Слово";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,11 +134,11 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.button2.Location = new System.Drawing.Point(29, 212);
+            this.button2.Location = new System.Drawing.Point(29, 209);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 31);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Показать";
+            this.button2.Text = "Проверить";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -171,11 +172,22 @@
             this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
             this.tableAdapterManager.UpdateOrder = Languages.English_DataBaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBox1.Location = new System.Drawing.Point(29, 141);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(341, 46);
+            this.textBox1.TabIndex = 11;
+            // 
             // English_EX_EnRus
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Languages.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
@@ -212,5 +224,6 @@
         private English_DataBaseDataSet english_DataBaseDataSet;
         private English_DataBaseDataSetTableAdapters.TableTableAdapter tableTableAdapter;
         private English_DataBaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
