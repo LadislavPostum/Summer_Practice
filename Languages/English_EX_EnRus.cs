@@ -92,6 +92,7 @@ namespace Languages
                     textBox1.BackColor = Color.LightCoral;
                     label5.Visible = true;
                 }
+                textBox1.ReadOnly = true;
             }            
         }
 
@@ -108,6 +109,7 @@ namespace Languages
             this.label5.Visible = false;
             this.textBox1.Text = "";
             this.textBox1.BackColor = Color.White;
+            textBox1.ReadOnly = false;
 
             int l = j;
             Random rand = new Random();
