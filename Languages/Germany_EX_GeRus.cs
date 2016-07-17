@@ -85,7 +85,8 @@ namespace Languages
             if (textBox1.Text != "")
             {
                 String s = label5.Text.Replace(" ", "");
-                if (textBox1.Text == s)
+                String st = textBox1.Text.Replace(" ", "");
+                if (st == s)
                 {
                     textBox1.BackColor = Color.LightGreen;
                 }
